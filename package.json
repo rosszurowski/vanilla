@@ -1,0 +1,10 @@
+{
+  "name": "@rosszurowski/vanilla",
+  "version": "1.3.0",
+  "description": "A browser reset for functional css",
+  "main": "vanilla.css",
+  "style": "vanilla.css",
+  "repository": "rosszurowski/vanilla",
+  "author": "Ross Zurowski",
+  "license": "MIT"
+}
