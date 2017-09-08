@@ -2,8 +2,17 @@
   "name": "@rosszurowski/vanilla",
   "version": "1.3.0",
   "description": "A browser reset for functional css",
-  "main": "vanilla.css",
+  "main": "index.js",
   "style": "vanilla.css",
+  "scripts": {
+    "build": "node -p 'require(`./index`)' > vanilla.css",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "index.js",
+    "vanilla.css",
+    "README.md"
+  ],
   "repository": "rosszurowski/vanilla",
   "author": "Ross Zurowski",
   "license": "MIT"

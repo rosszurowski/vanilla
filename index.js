@@ -1,3 +1,4 @@
+module.exports = `
 html {
   box-sizing: border-box;
 }
@@ -29,3 +30,4 @@ video {
   max-width: 100%;
   height: auto;
 }
+`.trim();
