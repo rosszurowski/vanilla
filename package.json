@@ -1,6 +1,6 @@
 {
   "name": "@rosszurowski/vanilla",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "A browser reset for functional css",
   "main": "lib/index.js",
   "style": "lib/vanilla.css",
