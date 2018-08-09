@@ -10,11 +10,12 @@
   "scripts": {
     "build": "npm run build:js && npm run build:css",
     "build:js": "mkdir -p lib && buble src/index.js > lib/index.js",
-    "build:css": "node -p 'require(`./lib/index`)' > lib/vanilla.css",
+    "build:css": "node -p 'require(`./lib/index`)' | csso > lib/vanilla.css",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "buble": "^0.15.2"
+    "buble": "^0.15.2",
+    "csso-cli": "^1.1.0"
   },
   "repository": "rosszurowski/vanilla",
   "author": "Ross Zurowski",
