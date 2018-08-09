@@ -1,9 +1,11 @@
 module.exports = `
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -29,5 +31,6 @@ canvas,
 video {
   max-width: 100%;
   height: auto;
+  vertical-align: top;
 }
 `.trim();
