@@ -4,20 +4,19 @@
   "description": "A browser reset for functional css",
   "main": "lib/index.js",
   "style": "lib/vanilla.css",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "npm run build:js && npm run build:css",
     "build:js": "mkdir -p lib && buble src/index.js > lib/index.js",
     "build:css": "node -p 'require(`./lib/index`)' > lib/vanilla.css",
     "prepublish": "npm run build"
   },
-  "files": [
-    "lib",
-    "README.md"
-  ],
-  "repository": "rosszurowski/vanilla",
-  "author": "Ross Zurowski",
-  "license": "MIT",
   "devDependencies": {
     "buble": "^0.15.2"
-  }
+  },
+  "repository": "rosszurowski/vanilla",
+  "author": "Ross Zurowski",
+  "license": "MIT"
 }
